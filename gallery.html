@@ -1,0 +1,190 @@
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+           <meta charset="utf-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+           <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+           <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+           <link rel="stylesheet" href="css/styles.css">
+           <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+           <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+           <title>Gallery</title>
+           <link rel="icon" href="images/miLogo.jpg" type="image/jpg" sizes="20x20">
+           <style>
+            .mySlides {display:none;}
+
+            #scrollButtons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btn{
+                padding-right: 15px;
+                margin-right: 10px;
+            }
+
+            .slideText 
+                h5 {color: #D2691E;
+              font-family: "Palatino";
+              font-weight: 500;
+              display: flex;
+              justify-content: center;
+              align-items: center;}
+
+          </style>
+
+      </head>
+
+      <body>
+
+       <nav class="navbar navbar-light nav-fill navbar-expand-sm fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav nav-fill w-100">
+                        
+                        <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-info"></span> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./amenities.html"><span class="fa fa-list"></span> Amenities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./plan.html"><span class="fa fa-building"></span> Plan</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-image"></span> Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card"></span> Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./locateus.html"><span class="fa fa-map-marker"></span> Location</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./rera.html"><span class="fa fa-legal"></span> Sai Marina RERA</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+
+        <div class="container">
+            <div class="row-content">
+
+             <div class="row-content">
+                <div class="col-auto" id="scrollButtons">
+                    <button class="btn" onclick="plusDivs(-1)">❮ Prev</button>
+                    <button class="btn" onclick="plusDivs(1)">Next ❯</button>
+                </div>     
+            </div><p></p>
+
+            <div class="col-auto" id="scrollButtons">
+                <button class="btn demo" onclick="currentDiv(1)">1</button> 
+                <button class="btn demo" onclick="currentDiv(2)">2</button> 
+                <button class="btn demo" onclick="currentDiv(3)">3</button> 
+                <button class="btn demo" onclick="currentDiv(4)">4</button> 
+                <button class="btn demo" onclick="currentDiv(5)">5</button> 
+            </div> 
+            <hr>
+            <div class="container" style="max-width:500px;">
+
+                <div class="mySlides">
+                    <div class="slideText"><h5>Main Building</h5></div>
+                    <img src="images/building.jpg" style="width:100%">
+
+                </div>
+
+
+                <div class="mySlides">
+                  <div class="slideText"><h5>Buddha Idol at Entrance</h5></div>
+                  <img src="images/entrance-buddha.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                  <div class="slideText"><h5>Rooftop Lawn</h5></div>
+                  <img src="images/rooftop-lawn.jpg" style="width:100%">
+
+              </div>
+
+              <div class="mySlides">
+                  <div class="slideText"><h5>Temple at Ground Floor</h5></div>
+                  <img src="images/temple.jpg" style="width:100%">
+
+              </div>
+
+              <div class="mySlides">
+                  <div class="slideText"><h5>Gymnasium at Terrace</h5></div>
+                  <img src="images/actual-gym.jpg" style="width:100%">
+              </div>
+
+          </div>
+      </div>
+
+  </div>
+  <br>
+<footer class="footer">
+    <div class="container">
+        <div class="row">   
+
+            <div class="col-5 col-sm-5 col-md-6 align-self-center text-center">
+                <img id="mahaLogo" src="images/logoWithName.jpg" style="width:140px; height:170px">
+            </div>
+            
+            <div class="col-7 col-sm-7 col-md-6 align-self-center">
+
+                <h5>Sai Marina Address</h5>
+                <address>
+                    Block No. C-606/607,<br>
+                    Room No. 1212, 1213, 1214, <br>
+                    Sai Vasanshah Bungalow Area <br>
+                    Netaji Chowk<br>
+                    ULHASNAGAR 421004<br>
+                    <span class="fa fa-phone fa-lg"></span>  : <a href="tel:+919860399130"> +919860399130</a><br>
+                    <span class="fa fa-phone fa-lg"></span>  : <a href="tel:+919860399130"> +917021361408</a><br>
+                    <span class="fa fa-envelope fa-lg"></span> : <a href="mailto:mahalaxmiinfrastructure@gmail.com">Inbox us</a>
+                </address>
+            </div>
+            <hr>
+
+
+        </div>
+    </div>
+</footer>
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+      showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var t = document.getElementsByClassName("slideText");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length || n > t.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+               t[i].style.display = "none";
+           }
+           for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" btn-primary", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        t[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " btn-primary";
+    }
+
+</script>
+
+</body>
+
+</html>
